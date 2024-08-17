@@ -3,7 +3,7 @@ import React from "react";
 export const ContactUs = () => {
     return(
 
-        <div className="container mx-auto text-white">
+        <div className="container mx-auto text-black">
 
                 <h1 className="text-[34px]">Contact Us</h1>
 

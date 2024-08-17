@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; // Import React and useState hook
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Import menu icons
 import { NavLink } from 'react-router-dom';
+import Logo  from '../assets/logo.jfif'
 
 const Navbar = () => {
     // State to handle the navbar's open/close status
@@ -14,13 +15,13 @@ const Navbar = () => {
     return (
         <>
             {/* Main Navigation Bar */}
-            <nav className='bg-black text-white w-full flex justify-between items-center h-16 mx-auto px-5'>
+            <nav className='bg-rose-400 text-white w-full flex justify-between items-center h-20 mx-auto px-5'>
                 
                 {/* Logo */}
-                <h1 className='text-[27px] text-[gold] font-bold'>LIFESTYLE</h1>
+                <img src={Logo} alt="" style={{width:"5%",height:"80%"}} />
                 
                 {/* Desktop Navigation Links */}
-                <ul className='hidden md:flex space-x-6'>
+                <ul className='hidden md:flex space-x-6 text-xl text-[black] font-semibold'>
 
                    <li> <NavLink to={"/"}> Home </NavLink> </li>
                    <li> <NavLink to={"/about-us"}> About Us </NavLink> </li>
@@ -31,8 +32,8 @@ const Navbar = () => {
                 
                 {/* Desktop Buttons */}
                 <div className='hidden md:flex space-x-4'>
-                    <button className='bg-[gold] px-4 py-2 text-[black] font-bold rounded-md'>Login</button>
-                    <button className='bg-[gold] px-4 py-2 text-[black] font-bold rounded-md'>Register</button>
+                <NavLink to={"/SignIn"}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Login</button></NavLink>
+                    <NavLink to={"/ Registration"}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Register</button></NavLink>
                 </div>
                 
                 {/* Hamburger Menu Icon for Mobile */}
@@ -42,9 +43,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Navigation Menu */}
-                <div className={!openNav ? 'left-[0%] fixed top-0 w-[60%] bg-[#141313] h-full block pl-4 pt-4 ease-in-out duration-500 md:hidden' : "fixed left-[100%] ease-in-out duration-500"}>
+                <div className={!openNav ? 'left-[0%] fixed top-0 w-[60%] bg-rose-400 h-full block pl-4 pt-4 ease-in-out duration-500 md:hidden' : "fixed left-[100%] ease-in-out duration-500"}>
                     {/* Logo in Mobile Menu */}
-                    <h1 className='text-[27px] text-[gold] font-bold'>LIFESTYLE</h1>
+                    <h1 className='text-[27px] bg-rose-400 font-bold'>TDList</h1>
                     
                     {/* Mobile Navigation Links */}
                     <ul className='block space-y-4 pt-8'>
@@ -55,8 +56,8 @@ const Navbar = () => {
                     
                     {/* Mobile Buttons */}
                     <div className='block space-y-4 pt-5'>
-                        <button className='bg-[gold] w-full py-2 text-[black] font-bold rounded-md block'>Login</button>
-                        <button className='bg-[gold] w-full py-2 text-[black] font-bold rounded-md'>Register</button>
+                    <NavLink to={"/SignIn"}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md block'>Login</button></NavLink>
+                    <NavLink to={"/ Registration"}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md'>Register</button></NavLink>
                     </div>
                 </div>
             </nav>

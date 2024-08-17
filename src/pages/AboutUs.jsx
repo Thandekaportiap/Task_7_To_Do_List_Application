@@ -3,7 +3,7 @@ import React from "react";
 export const AboutUs = () => {
     return(
 
-        <div className="container mx-auto text-white">
+        <div className="container mx-auto text-black">
 
                 <h1 className="text-[34px]">About Us</h1>
 
