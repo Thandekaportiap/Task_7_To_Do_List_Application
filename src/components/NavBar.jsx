@@ -32,7 +32,7 @@ const Navbar = () => {
                 
                 {/* Desktop Buttons */}
                 <div className='hidden md:flex space-x-4'>
-                <NavLink to={"/SignIn"}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Login</button></NavLink>
+                <NavLink to={'/logIn'}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Login</button></NavLink>
                     <NavLink to={"/ Registration"}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Register</button></NavLink>
                 </div>
                 
@@ -56,7 +56,7 @@ const Navbar = () => {
                     
                     {/* Mobile Buttons */}
                     <div className='block space-y-4 pt-5'>
-                    <NavLink to={"/SignIn"}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md block'>Login</button></NavLink>
+                    <NavLink to={'/logIn'}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md block'>Login</button></NavLink>
                     <NavLink to={"/ Registration"}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md'>Register</button></NavLink>
                     </div>
                 </div>
