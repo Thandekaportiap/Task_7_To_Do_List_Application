@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const registration = () => {
     return (
@@ -30,7 +31,7 @@ const registration = () => {
           
           <button className="bg-rose-400 text-black px-4 py-2 rounded-md mt-8 w-full">Register</button>
           <h3>Already have an Account?</h3>
-          <button className="bg-secondary text-primary px-4 py-2 rounded-md mt-8 w-full">Log-In</button>
+          <NavLink to={'/logIn'}><button className="bg-secondary text-primary px-4 py-2 rounded-md mt-8 w-full">Log-In</button></NavLink>
         </div>
       </div>
   

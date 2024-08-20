@@ -24,7 +24,7 @@ export const Home = () => {
         </button>
         </NavLink>
   
-        <p className="mt-4 text-gray-600">Already have an account? <a >Login</a></p>
+        <p className="mt-4 text-gray-600">Already have an account? <NavLink to={'/logIn'}>LogIn</NavLink></p>
       </div>
 </>
     );
