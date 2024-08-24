@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <>
             {/* Main Navigation Bar */}
-            <nav className='bg-rose-400 text-white w-full flex justify-between items-center h-20 mx-auto px-5'>
+            <nav className='bg-gradient-to-tr from-red-400 to-red-500" text-white w-full flex justify-between items-center h-20 mx-auto px-5'>
                 
                 {/* Logo */}
                 <img src={Logo} alt="" style={{width:"5%",height:"80%"}} />
