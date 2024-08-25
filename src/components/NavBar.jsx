@@ -15,13 +15,13 @@ const Navbar = () => {
     return (
         <>
             {/* Main Navigation Bar */}
-            <nav className='bg-gradient-to-tr from-red-400 to-red-500" text-white w-full flex justify-between items-center h-20 mx-auto px-5'>
+            <nav className='bg-purple-700 " text-white w-full flex justify-between items-center h-20 mx-auto px-5'>
                 
                 {/* Logo */}
-                <img src={Logo} alt="" style={{width:"5%",height:"80%"}} />
-                
+                {/* <img src={Logo} alt="" style={{width:"5%",height:"80%"}} /> */}
+                <h1 className="text-[white]">TDList</h1>
                 {/* Desktop Navigation Links */}
-                <ul className='hidden md:flex space-x-6 text-xl text-[black] font-semibold'>
+                <ul className='hidden md:flex space-x-6 text-xl text-[white] font-semibold'>
 
                    <li> <NavLink to={"/"}> Home </NavLink> </li>
                    <li> <NavLink to={"/about-us"}> About Us </NavLink> </li>
@@ -43,9 +43,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Navigation Menu */}
-                <div className={!openNav ? 'left-[0%] fixed top-0 w-[60%] bg-rose-400 h-full block pl-4 pt-4 ease-in-out duration-500 md:hidden' : "fixed left-[100%] ease-in-out duration-500"}>
+                <div className={!openNav ? 'left-[0%] fixed top-0 w-[60%] bg-purple-700 h-full block pl-4 pt-4 ease-in-out duration-500 md:hidden' : "fixed left-[100%] ease-in-out duration-500"}>
                     {/* Logo in Mobile Menu */}
-                    <h1 className='text-[27px] bg-rose-400 font-bold'>TDList</h1>
+                    <h1 className='text-[27px] bg-purple-800 font-bold'>TDList</h1>
                     
                     {/* Mobile Navigation Links */}
                     <ul className='block space-y-4 pt-8'>

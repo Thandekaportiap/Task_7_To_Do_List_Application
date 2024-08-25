@@ -5,7 +5,7 @@ const registration = () => {
     return (
   <>
   <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-        <div className="w-1/2 bg-white p-8 rounded shadow">
+        <div className="w-1/2 bg-white p-5 rounded shadow">
           <h1 className="text-3xl font-bold mb-2 text-center">Welcome Back</h1>
           <p className="text-gray-600 mb-8 text-center">Login TDList</p>
           <div className="mb-4">
@@ -29,9 +29,9 @@ const registration = () => {
             <label htmlFor="keep-signed-in">Remember my password</label>
           </div>
           
-          <button className="bg-rose-400 text-black px-4 py-2 rounded-md mt-8 w-full">Register</button>
+          <button className="bg-purple-500 text-black px-4 py-2 rounded-md mt-8 w-full">Register</button>
           <h3>Already have an Account?</h3>
-          <NavLink to={'/logIn'}><button className="bg-secondary text-primary px-4 py-2 rounded-md mt-8 w-full">Log-In</button></NavLink>
+          <NavLink to={'/logIn'}><button className="bg-violet-200 hover:bg-purple-500 text-primary px-4 py-2 rounded-md mt-8 w-full">Log-In</button></NavLink>
         </div>
       </div>
   

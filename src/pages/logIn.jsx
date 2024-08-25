@@ -5,7 +5,7 @@ const logIn = () => {
     return (
   <>
   <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-        <div className="w-1/2 bg-white p-8 rounded shadow">
+        <div className="w-1/2 bg-white p-5 rounded shadow">
           <h1 className="text-3xl font-bold mb-2 text-center">Welcome Back</h1>
           <p className="text-gray-600 mb-8 text-center">Login TDList</p>
           <div className="mb-4">
@@ -18,9 +18,9 @@ const logIn = () => {
           </div>
          
           <a href="#" className="text-gray-600 underline text-sm">Forget password?</a>
-          <button className="bg-rose-400 text-white px-4 py-2 rounded-md mt-8 w-full">Login</button>
+          <button className="bg-purple-500 text-white px-4 py-2 rounded-md mt-8 w-full">Login</button>
           <h3>Dont have an Account?</h3>
-          <NavLink to={"/ Registration"}><button className="bg-violet-100 hover:bg-rose-400 text-primary px-4 py-2 rounded-md mt-8 w-full">Signup</button></NavLink>
+          <NavLink to={"/ Registration"}><button className="bg-violet-200 hover:bg-purple-500 text-primary px-4 py-2 rounded-md mt-8 w-full">Signup</button></NavLink>
         </div>
       </div>
   
