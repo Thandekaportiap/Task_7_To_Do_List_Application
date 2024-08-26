@@ -2,7 +2,7 @@ import React from "react";
 
 export const AboutUs = () => {
     return(
-
+        <>
         <div className="container mx-auto text-black">
 
                 <h1 className="text-[34px]">About Us</h1>
@@ -10,5 +10,9 @@ export const AboutUs = () => {
                 <p className="text-[12px]">Learn more about our mission, vision and team</p>
 
         </div>
+        <div>
+            
+        </div>
+        </>
     );
 };

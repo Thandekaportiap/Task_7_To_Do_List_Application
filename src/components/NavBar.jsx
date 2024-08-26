@@ -26,18 +26,18 @@ const Navbar = () => {
                    <li> <NavLink to={"/"}> Home </NavLink> </li>
                    <li> <NavLink to={"/about-us"}> About Us </NavLink> </li>
                     <li><NavLink to={"/contact-us"}> Contact Us </NavLink></li>
-                    
+                    <li><NavLink to={"/Homelist"}> Homelist </NavLink></li>
                    
                 </ul>
                 
                 {/* Desktop Buttons */}
-                <div className='hidden md:flex space-x-4'>
+                <div className='hidden space-x-4 md:flex'>
                 <NavLink to={'/logIn'}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Login</button></NavLink>
                     <NavLink to={"/ Registration"}><button className='bg-violet-200 px-4 py-2 text-[black] font-bold rounded-md'>Register</button></NavLink>
                 </div>
                 
                 {/* Hamburger Menu Icon for Mobile */}
-                <div className='md:hidden right-6 fixed' onClick={ToggleNavBar}>
+                <div className='fixed md:hidden right-6' onClick={ToggleNavBar}>
                     {/* Toggle between open and close icons based on openNav state */}
                     {!openNav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
                 </div>
@@ -48,14 +48,15 @@ const Navbar = () => {
                     <h1 className='text-[27px] bg-purple-800 font-bold'>TDList</h1>
                     
                     {/* Mobile Navigation Links */}
-                    <ul className='block space-y-4 pt-8'>
+                    <ul className='block pt-8 space-y-4'>
                         <li className='border-b border-[#232323]'> <NavLink to={"/"}> Home </NavLink>  </li>
                         <li className='border-b border-[#232323]'> <NavLink to={"/about-us"}> About Us </NavLink>  </li>
                         <li className='border-b border-[#232323]'> <NavLink to={"/contact-us"}> Contact Us </NavLink> </li>
+                        <li className='border-b border-[#232323]'> <NavLink to={"/Homelist"}> Homelist </NavLink> </li>
                     </ul>
                     
                     {/* Mobile Buttons */}
-                    <div className='block space-y-4 pt-5'>
+                    <div className='block pt-5 space-y-4'>
                     <NavLink to={'/logIn'}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md block'>Login</button></NavLink>
                     <NavLink to={"/ Registration"}><button className='bg-violet-200 w-full py-2 text-[black] font-bold rounded-md'>Register</button></NavLink>
                     </div>

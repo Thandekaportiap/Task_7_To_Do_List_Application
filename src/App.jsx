@@ -9,6 +9,7 @@ import { Home } from './pages/Home';
 import Registration from './pages/Registration';
 import Footer from "./components/Footer";
 import LogIn from './pages/logIn';
+import Homelist from './pages/Homelist';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Route path='/contact-us' element={ <ContactUs/> } />
       <Route path='/logIn' element={ <LogIn/> } />
       <Route path='/ Registration' element={ < Registration/> } /> 
+      <Route path='/Homelist' element={ <Homelist/> } />
      
     </Routes>
     <Footer/>
