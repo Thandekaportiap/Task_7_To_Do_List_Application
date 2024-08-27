@@ -1,3 +1,7 @@
+import { FaRegCalendarCheck } from "react-icons/fa";
+import { GrSchedule } from "react-icons/gr";
+import { BsBell } from "react-icons/bs";
+
 const footer = () => {
     return (
         <>
@@ -10,9 +14,9 @@ const footer = () => {
         
         </div>
         <div className="w-full lg:w-1/4 ssm:w-1/2">
-          <h4 className="text-lg font-semibold mb-4">Schedule</h4>
-          <p className="mb-4">Calendar</p>
-          <p className="mb-4">Reminders</p>
+          <h4 className="text-lg font-semibold mb-4">Schedule<FaRegCalendarCheck size={20}/></h4>
+          <p className="mb-4">Calendar<GrSchedule size={20}/></p>
+          <p className="mb-4">Reminders <BsBell size={20}/></p>
           
         
         

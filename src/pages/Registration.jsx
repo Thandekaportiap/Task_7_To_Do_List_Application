@@ -11,9 +11,9 @@ const registration = () => {
     return (
   <>
   <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-        <div className="w-1/2 p-5 bg-white rounded shadow">
-          <h1 className="mb-2 text-3xl font-bold text-center">Welcome Back</h1>
-          <p className="mb-8 text-center text-gray-600">Login TDList</p>
+        <div className="w-1/2 p-3 bg-white rounded shadow">
+          <h1 className="mb-2 text-3xl font-bold text-center">Register</h1>
+          <p className="mb-8 text-center text-gray-600">Create your new account with TDList</p>
           <div className="mb-4">
             <label htmlFor="userName" className="block mb-1 font-medium">User-Name</label>
             <input type="text" id="userName" placeholder="Enter Your New UserName" className="w-full p-2 border rounded-md" />
